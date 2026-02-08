@@ -2,9 +2,27 @@
   "name": "game-motivation-messages",
   "version": "1.0.0",
   "description": "Display random motivation messages themed around video games",
-  "main": "src/index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "npx serve ."
+    "start": "electron .",
+    "build:win": "electron-builder --win --x64"
   },
-  "license": "MIT"
+  "build": {
+    "appId": "com.gamemotivation.app",
+    "productName": "Game Motivation Messages",
+    "files": [
+      "main.js",
+      "index.html",
+      "src/**/*"
+    ],
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": false
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  }
 }
