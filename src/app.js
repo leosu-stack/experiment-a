@@ -1,5 +1,3 @@
-import { getGameNames, getRandomMessage } from "./messages.js";
-
 const gameSelect = document.getElementById("game-select");
 const messageDisplay = document.getElementById("message");
 const generateBtn = document.getElementById("generate-btn");

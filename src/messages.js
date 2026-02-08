@@ -210,11 +210,11 @@ const gameMessages = {
   ],
 };
 
-export function getGameNames() {
+function getGameNames() {
   return Object.keys(gameMessages);
 }
 
-export function getRandomMessage(gameName) {
+function getRandomMessage(gameName) {
   const messages = gameMessages[gameName];
   if (!messages) return null;
   const index = Math.floor(Math.random() * messages.length);
