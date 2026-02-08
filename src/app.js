@@ -6,12 +6,8 @@ const generateBtn = document.getElementById("generate-btn");
 const gameIcon = document.getElementById("game-icon");
 
 const gameIcons = {
-  "Dark Souls": "\u{1F525}",
-  "The Legend of Zelda": "\u{1F5E1}\u{FE0F}",
-  "Minecraft": "\u{26CF}\u{FE0F}",
-  "Mario": "\u{1F344}",
-  "Pokémon": "\u{26A1}",
-  "Skyrim": "\u{1F409}",
+  "Elden Ring Nightreign": "\u{1F525}",
+  "Starcraft 2": "\u{1F680}",
 };
 
 function populateGameSelect() {
