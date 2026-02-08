@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Motivation Messages</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Game Motivation</h1>
+    <p class="subtitle">Pick a game. Get inspired.</p>
+
+    <div class="controls">
+      <select id="game-select">
+        <option value="">-- Choose a game --</option>
+      </select>
+      <button id="generate-btn">New Message</button>
+    </div>
+
+    <div class="message-card">
+      <span id="game-icon" class="icon"></span>
+      <p id="message">Select a game to get started.</p>
+    </div>
+  </div>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
